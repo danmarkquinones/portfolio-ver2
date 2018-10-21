@@ -1,0 +1,320 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+	background-color: grey;
+	background-image: url(../images/bg1.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: soft-light;
+	line-height: 1.4;
+}
+
+.container{
+	/*display: grid;
+	grid-gap: 10px;*/
+	background-color: lightgrey;
+	/*margin-right: 100px;
+	margin-left: 100px;**/
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/*HEADER*/
+.main-head{
+	display: grid;
+	padding: 1rem;
+	background-color: lightgrey;
+	min-height: 100px;
+	box-shadow: 2px 2px 6px rgba(104, 104, 104, 1);
+}
+.header-content{
+	display: flex;
+	padding: .5rem;
+
+}
+.right{
+	width: 13%;
+}
+.right img{
+	height: 110px;
+	width: 100px;
+}
+.left{
+	width: 60%;
+	padding-top: .6rem;
+}
+.head{
+	float: left;
+}
+/*NAV*/
+.main-nav ul{
+	display: grid;
+	grid-gap: 10px; /*gap between grids*/
+	grid-template-columns: repeat(4, 1fr);
+	list-style: none;
+	padding: 0;
+
+}
+.main-nav a{
+	background-color: lightgrey;
+	display: block;
+	text-decoration: none;
+	padding: 0.8rem;
+	text-align: center;
+	color: grey;
+	box-shadow: 2px 2px 6px rgba(104, 104, 104, 1);
+	font-size: 16px;
+	font-weight: bolder;
+}
+.main-nav{
+	padding: 1rem;
+}
+.main-nav a:hover{
+	background-color: silver;
+	color: black;
+}
+nav{
+	position: sticky;
+}
+
+/*ABOUT ME*/
+.main-about{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: 
+	'resume resume resume resume sidebox-a'
+	'resume resume resume resume sidebox-b';
+}
+.resume{
+	display: block;
+	grid-gap: 10px;
+	grid-area: resume;
+	background-image: url(../images/bg1.jpeg);
+	background-color: grey;
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: soft-light;
+	min-height: 400px;
+	padding: 2rem;
+	box-shadow: 2px 2px 6px rgba(104, 104, 104, 1);
+	color: #f2f2f2;
+}
+.resume h1{
+	font-size: 35px;
+	padding-top: 9rem;
+}
+.resume p{
+	padding-top: 1rem;
+	font-size: 20px;
+}
+
+.box{
+	background-color: lightgrey;
+	box-shadow: 2px 2px 6px rgba(104, 104, 104, 1);
+}
+.sidebox-a{
+	grid-area: sidebox-a;
+	padding: .9rem;
+	text-align: center;
+}
+.sidebox-a h3{
+	padding-top: 1rem;
+	padding-bottom: 1.5rem;
+	font-size: 20px;
+}
+.btn{
+	padding: 0.5rem;
+	color: grey;
+	border: 5px solid grey;
+	border-radius: 10px;
+}
+.btn a{
+	text-decoration: none;
+	color: grey;
+}
+.btn:hover{
+	background-color: green;
+	color: white;
+}
+
+.sidebox-b{
+	grid-area: sidebox-b;
+	padding: 1rem;
+	text-align: center;
+}
+fieldset{
+	border:5px solid grey;
+	border-radius: 0px 10px 0px 10px;
+
+}
+legend h3{
+	font-size: 20px;
+}
+.sidebox-b ul{
+	list-style: none;
+	display: flex;
+}
+.soc-icon{
+	height: 50px;
+	margin-left: 10px;
+}
+
+
+/*SKILLS*/
+.skills{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(5, 1fr);
+	padding:1rem;
+}
+
+.skills div{
+	background-color: lightgrey;
+	min-height: 200px;
+	padding: 1rem;
+	box-shadow: 2px 2px 6px rgba(104, 104, 104, 1);
+	text-align: center;
+
+}
+.skills-icon{
+	height: 100px;
+	width: 100px;
+}
+.rate{
+	background-color: green;
+	width: 100%;
+	border:2px solid grey;
+	border-radius: 10px;
+	color: green;
+}
+.rate2{
+	width:50%;
+	background-color: yellow;
+	border:2px solid grey;
+	border-radius: 10px;
+	color: yellow;
+}
+.grade:hover{
+	color: white;
+
+}
+
+/*CAPSTONE*/
+.capstone{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 1rem;
+}
+.capstone div{
+	background-color: lightgrey;
+	min-height: 300px;
+	padding: 1rem;
+	box-shadow: 2px 2px 6px rgba(104, 104, 104, 1);
+}
+.capstone-content h3{
+	font-size: 20px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+
+}
+.capstone-content button{
+	padding: .5rem;
+	margin-top: 20px;
+}
+.capstone-content p{
+	margin-bottom: 10px;
+}
+.capstone-slider{
+	display: grid;
+	background-color: lightgrey;
+	min-height: 400px;
+	box-shadow: 2px 2px 6px rgba(104, 104, 104, 1);
+	padding: 2rem;
+}
+
+
+/*EXTRAS*/
+.main-extras{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(3, 1fr);
+	min-height: 300px;
+	padding: .8rem;
+}
+.main-extras div{
+	background-color: lightgrey;
+	box-shadow: 2px 2px 6px rgba(104, 104, 104, 1);
+	
+}
+
+/*FOOTER*/
+footer{
+	background-color: grey;
+	height: 50px;
+	text-align: center;
+	color: white;
+	line-height: 50px;
+}
+.back a{
+	text-decoration: none;
+	margin-left: 50px;
+	color: white;
+}
+.back a:hover{
+	color: black;
+}
+
+
+/*CELLPHONE VIEWS*/
+
+@media only screen and (max-width: 420px) {
+	.main-about{
+	grid-template-areas: 
+	'resume'
+	'resume'
+	'sidebox-a'
+	'sidebox-b';
+	}
+	.skills{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.capstone{
+		grid-template-columns: 1fr;
+	}
+	.main-extras{
+		grid-template-columns: 1fr;
+		height: 500px;
+	}
+	.right{
+		width: 50%;
+	}
+	.main-nav ul{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.left h2{
+		font-size: 20px;
+	}
+	.left p{
+		font-size: 10px;
+		
+	}
+}
+
+/*Tablet views*/
+
+@media only screen and (min-width:421px) and (max-width:960px){
+	.right{
+		width: 20%;
+	}
+	.skills{
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
