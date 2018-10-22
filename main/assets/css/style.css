@@ -145,6 +145,9 @@ body {
 	background-color: green;
 	color: white;
 }
+.btn a:hover{
+	color: white;
+}
 
 
 .sidebox-b{
@@ -294,6 +297,14 @@ footer{
 	width: 100%;
 }
 
+
+/*Desktop Styles (width > 961)*/
+@media only screen and (min-width: 961px){
+	.back{
+		float: right;
+		margin-right: 20px;
+	}
+}
 
 /*CELLPHONE VIEWS*/
 
