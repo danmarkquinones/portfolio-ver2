@@ -272,7 +272,7 @@ legend h3{
 footer{
 	background-color: grey;
 	height: 50px;
-	text-align: left;
+	text-align: center;
 	color: white;
 	line-height: 50px;
 }
@@ -340,7 +340,7 @@ footer{
 		
 	}
 	footer{
-		height: 100px;
+		height: 50px;
 		text-align: center;
 		margin-top: 650px;
 	}
