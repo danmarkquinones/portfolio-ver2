@@ -33,9 +33,18 @@ body {
 #project .capstone-content,
 #cap-slider,
 footer{
-	background-image: url(../images/bg4.jpg);
+	background-image: url(../images/bg4.jpg); 
 }
 
+#top,
+#nav ul li a,
+#about .box,
+#skills,
+#project .capstone-content,
+#cap-slider,
+#extras #hobbies ol{
+	border-radius: 10px;
+}
 
 
 /*HEADER*/
@@ -187,6 +196,12 @@ legend h3{
 	width: 19%;
 	margin-left: 1px;
 	margin-bottom: 20px;
+	 -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+.soc-icon:hover{
+	-webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 
@@ -212,18 +227,22 @@ legend h3{
 }
 
 .rate{
-	background-color: green;
+	background-color: #7ef660;
 	width: 87%;
 	border:2px solid grey;
 	border-radius: 10px;
 	color: green;
 }
 .rate2{
-	width:50%;
-	background-color: #A2CA44;
+	width:70%;
+	background-color: #ffe063;
 	border:2px solid grey;
 	border-radius: 10px;
 	color: #A2CA44;
+}
+.grade {
+	border: 2px solid grey;
+	border-radius: 10px;
 }
 .grade:hover{
 	color: white;
@@ -272,6 +291,12 @@ legend h3{
 	grid-template-columns: repeat(3, 1fr);
 	min-height: 300px;
 	padding: .5rem;
+}
+.extra{
+	opacity: 0.5;
+}
+.extra:hover{
+	opacity: 1;
 }
 .extra{
 	background-color: lightgrey;
@@ -357,6 +382,8 @@ footer{
 		height: 50px;
 		text-align: center;
 		margin-top: 650px;
+		background-position: center;
+		background-size: cover;
 	}
 	.back{
 		text-align: center;
